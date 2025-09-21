@@ -1,0 +1,27 @@
+{
+  "name": "trackit_backend",
+  "version": "1.0.0",
+  "description": "The backend of this Project & Task Management tool is built as a RESTful API service that handles all the core business logic, data storage, and role-based access. It ensures secure and structured communication between the frontend and the database.",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "Jest",
+    "MongoDB"
+  ],
+  "license": "ISC",
+  "author": "Rishabh Gupta",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules ./index.js",
+    "start": "node --experimental-json-modules ./index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1",
+    "nodemon": "^3.1.10"
+  }
+}
